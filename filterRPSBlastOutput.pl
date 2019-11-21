@@ -7,8 +7,8 @@ use strict;
 # AJPerez, 2019/10/19
 
 # Thresholds
-my $SC = 70; # subject (CDD Domain) coverage
-my $ID = 25; # identity
+my $ID = $ARGV[1] || 25; # identity
+my $SC = $ARGV[2] || 70; # subject (CDD Domain) coverage
 
 # Gather smp mapping
 my %smp;
